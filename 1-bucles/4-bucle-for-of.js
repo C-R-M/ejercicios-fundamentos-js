@@ -32,4 +32,11 @@ let gente = [{
         nombre: 'Jenny',
         edad: 10
     },
-]
+];
+var mayores = [];
+for (var persona of gente) {
+    if(persona.edad > 25){
+        mayores.push(persona);
+        console.log(persona.nombre);
+    }
+}

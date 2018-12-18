@@ -34,4 +34,3 @@ let gente = [{
         edad: 10
     },
 ]
-

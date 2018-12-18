@@ -32,4 +32,7 @@ let gente = [{
         edad: 10
     },
 ]
-
+var nombre4= gente.filter(function (nom) {
+	return nom.nombre.length == 4;
+});
+console.log(nombre4);
