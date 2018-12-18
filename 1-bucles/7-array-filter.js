@@ -34,3 +34,7 @@ let gente = [{
         edad: 10
     },
 ]
+var nombre4= gente.filter(function (nom) {
+	return nom.nombre.substr(0,1) == "J" && nom.edad < 40;
+});
+console.log(nombre4);
