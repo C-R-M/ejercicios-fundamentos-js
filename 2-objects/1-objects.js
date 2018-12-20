@@ -5,9 +5,11 @@
 
 
 // Aquí tu código
-
-
-
+let ordenador = {'marca': "La pava",
+                'tipo': "portátil",
+                'perifericos': ["ratón","touchPad"],
+                'almacenamiento': {'usb': "64Gb", 'discos': ["SSD","HDD"],'DVD': "DVD doble cara", 'maestro': 0}}
+ 
 // Hasta aquí
 
 // TEST 1

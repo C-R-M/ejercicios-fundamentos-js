@@ -9,7 +9,13 @@
 //  throw new Error('muestraPorConsolaEurosEnPesetas debe recibir un number');
 
 // Aquí tu código
-
+function muestraPorConsolaEurosEnPesetas(numero){
+    if(typeof(numero)==='number'){
+        console.log(Math.floor(numero/168));
+    } else {
+        throw new Error('muestraPorConsolaEurosEnPesetas debe recibir un number');
+    }
+}
 
 // Hasta aquí
 
@@ -37,6 +43,6 @@ try {
     console.log('suspendes: muestraPorConsolaEurosEnPesetas debe lanzar un error si no recibe un número');
     
 } catch (error) {
-    console.log('apruebas');
+    console.log('apruebas ' + error.message);
         
 }

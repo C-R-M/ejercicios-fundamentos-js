@@ -14,14 +14,15 @@
 let extraerAcronimo = (...input) => {
     let acronimo = '';
     // Aquí tu código.  Desde aquí:
-   
+    for(i=0;i<input.length;i++){
+        acronimo = acronimo + input[i].slice(0,1);
+        }
     // Hasta aquí.
     return acronimo;
 }
 
 
 let test = require('../test.js');
-
 test(extraerAcronimo, ['Estudiante', 'Del', 'Bootcamp', 'Fullstack', 'Geekshubs'], 'EDBFG');
 test(extraerAcronimo, ['hola', 'caracola'], 'hc');
 test(extraerAcronimo, ['33', '44',' '], '34 ');

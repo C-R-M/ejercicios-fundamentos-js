@@ -7,7 +7,13 @@
 //  convierteEurosEnPesetas(1) === 168 // true
 
 // Aquí tu código
-
+function convierteEurosEnPesetas(cantidad){
+    if(typeof(cantidad)==='number'){
+        return cantidad*168;
+    } else {
+        return 'Por favor introduce un número';
+    }
+}
 
 // Hasta aquí
 

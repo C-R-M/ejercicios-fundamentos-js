@@ -8,7 +8,14 @@
 
 let cuentaCaracteres = (texto) => {
     // Aquí tu código.  Desde aquí:
-   
+    if(texto == ''){
+        return 'Debo ser ejecutada con un string';
+    }
+    if (typeof(texto)==='string'){
+        return texto.length;
+    } else {
+        return 'Debo ser ejecutada con un string';
+    }
     
     // Hasta aquí.
 }

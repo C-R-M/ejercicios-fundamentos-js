@@ -7,7 +7,13 @@
 //  throw new Error('convierteEurosEnPesetas debe recibir un number');
 
 // Aquí tu código
-
+function convierteEurosEnPesetas(cantidad){
+    if(typeof(cantidad)==='number'){
+        return cantidad*168;
+    } else {
+        throw new Error('convierteEurosEnPesetas debe recibir un number');
+    }
+}
 // Hasta aquí
 
 
@@ -40,6 +46,6 @@ try {
     console.log('suspendes: convierteEurosEnPesetas debe lanzar un error si no recibe un número');
     
 } catch (error) {
-    console.log('apruebas');
+    console.log('apruebas ' + error.message);
         
 }

@@ -5,6 +5,9 @@
 
 
 // Aquí tu código
+let obj = {'a': {'b': true,'c':[3,4]},
+            'd': 5,'f':"abcd"}
+
 
 // Hasta aquí
 
